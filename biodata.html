@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Biodata</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .form-biodata {
+            background-color: orange;
+            width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        table {
+            margin: auto;
+            border-spacing: 5px;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        input, select, textarea {
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-biodata">
+
+    <h1>Isikan Biodata Anda</h1>
+
+    <form>
+        <table>
+
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+
+            <tr>
+                <td>Tempat Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="tempat">
+                    <input type="date" name="tanggal">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="Pria"> Pria
+                    <input type="radio" name="jk" value="Wanita"> Wanita
+                </td>
+            </tr>
+
+            <tr>
+                <td>Program Studi</td>
+                <td>:</td>
+                <td>
+                    <select name="prodi">
+                        <option>--Pilih Prodi--</option>
+                        <option>Teknik Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Manajemen</option>
+                        <option>Akuntansi</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <select name="agama">
+                        <option>--Pilih Agama--</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                    <textarea name="alamat" rows="2"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                    <select name="hobi">
+                        <option>--Pilih Hobi--</option>
+                        <option>Olahraga</option>
+                        <option>Naik Gunung</option>
+                        <option>Bermain Game</option>
+                        <option>Scroll Tiktok</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Semester</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="semester" value="1"> 1
+                    <input type="checkbox" name="semester" value="3"> 3
+                    <input type="checkbox" name="semester" value="5"> 5
+                    <input type="checkbox" name="semester" value="7"> 7
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</div>
+
+</body>
+</html>
